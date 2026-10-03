@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sentinel-ai-firewall
+    env: python
+    buildCommand: "python -m compileall ."
+    startCommand: "python server.py"
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 10000

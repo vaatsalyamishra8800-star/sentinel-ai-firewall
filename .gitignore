@@ -1,0 +1,18 @@
+# Large binaries
+cloudflared.exe
+*.exe
+sentinel_lambda.zip
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+
+# Local session files
+public_url.txt
+*.log

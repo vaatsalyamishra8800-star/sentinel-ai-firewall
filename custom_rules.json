@@ -1,0 +1,32 @@
+[
+  {
+    "name": "hot_rule_1790880387",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
+  },
+  {
+    "name": "hot_rule_1790880420",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
+  },
+  {
+    "name": "hot_rule_1790880722",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
+  },
+  {
+    "name": "hot_rule_1790881572",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
+  },
+  {
+    "name": "hot_rule_1790881878",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
+  }
+]
