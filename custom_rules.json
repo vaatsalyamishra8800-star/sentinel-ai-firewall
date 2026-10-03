@@ -28,5 +28,17 @@
     "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
     "type": "prompt_injection",
     "description": "Dynamic hot-reloaded rule"
+  },
+  {
+    "name": "hot_rule_1791054719",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
+  },
+  {
+    "name": "hot_rule_1791054824",
+    "pattern": "TITAN_CLASSIFIED_PROJECT_OMEGA",
+    "type": "prompt_injection",
+    "description": "Dynamic hot-reloaded rule"
   }
 ]

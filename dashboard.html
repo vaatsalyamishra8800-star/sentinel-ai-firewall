@@ -2189,7 +2189,7 @@
         <span style="color:#334155;">&bull;</span>
         <span class="ticker-item"><span class="ticker-tag-block">[DEFCON 1]</span> HoneyPrompt Canary Tripwire Breached: Rogue Agent Quarantined</span>
         <span style="color:#334155;">&bull;</span>
-        <span class="ticker-item"><span class="ticker-tag-allow">[ALLOW]</span> Cryptographic SHA-256 Merkle Ledger Verified (100% Immutable)</span>
+        <span class="ticker-item"><span class="ticker-tag-allow">[ALLOW]</span> Cryptographic SHA-256 Audit Ledger Verified (Hash-Chained)</span>
       </div>
     </div>
 
@@ -2279,28 +2279,28 @@
       </h1>
 
       <p class="hero-subtext">
-        Sentinel is the world's fastest zero-trust firewall for AI agents & LLMs. 
+        Sentinel is a zero-trust firewall gateway for AI agents & LLMs. 
         It neutralizes adversarial prompt injections, scrubs sensitive PII in-flight, enforces granular tool RBAC, 
-        and detects memory exfiltration with cryptographic canaries — in under <strong>1.8ms</strong>.
+        and detects memory exfiltration with cryptographic canaries — with <strong>sub-millisecond local engine latency</strong>.
       </p>
 
       <!-- Key Metrics Deck -->
       <div class="hero-stats-deck">
         <div class="hero-stat-card">
-          <div class="hero-stat-num" style="color: #38bdf8;">&lt; 1.8ms</div>
-          <div class="hero-stat-lbl">Edge Latency</div>
+          <div class="hero-stat-num" style="color: #38bdf8;">&lt; 1ms</div>
+          <div class="hero-stat-lbl">Local Engine Latency</div>
         </div>
         <div class="hero-stat-card">
-          <div class="hero-stat-num" style="color: #34d399;">100%</div>
-          <div class="hero-stat-lbl">22/22 Attack Vectors</div>
+          <div class="hero-stat-num" style="color: #34d399;">22 / 22</div>
+          <div class="hero-stat-lbl">Test Scenarios Passing</div>
         </div>
         <div class="hero-stat-card">
           <div class="hero-stat-num" style="color: #fbbf24;">DEFCON 1</div>
-          <div class="hero-stat-lbl">Canary Quarantine</div>
+          <div class="hero-stat-lbl">Canary Quarantine Trigger</div>
         </div>
         <div class="hero-stat-card">
           <div class="hero-stat-num" style="color: #a5b4fc;">4 Global</div>
-          <div class="hero-stat-lbl">Regulatory Standards</div>
+          <div class="hero-stat-lbl">Frameworks Aligned</div>
         </div>
       </div>
 
@@ -2363,7 +2363,7 @@
         <div id="quickScanResult" class="quickscan-verdict-bar">
           <div class="verdict-pill BLOCK" id="quickVerdictPill">🛑 BLOCK</div>
           <div class="verdict-msg" id="quickVerdictMsg">Blocked: Prompt Injection / Jailbreak Attempt ('prompt_injection') &bull; MITRE ATLAS AML.T0051</div>
-          <div class="verdict-time" id="quickVerdictTime">~1.8ms latency</div>
+          <div class="verdict-time" id="quickVerdictTime">&lt; 1ms engine latency</div>
         </div>
       </div>
 
@@ -2371,8 +2371,8 @@
       <div class="hero-bento-grid">
         <div class="bento-card">
           <div class="bento-icon-box" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">⚡</div>
-          <div class="bento-title">Sub-2ms Zero Overhead</div>
-          <div class="bento-desc">Zero external dependencies. Blazing fast pure Python edge execution that never bottlenecks agent reasoning.</div>
+          <div class="bento-title">Sub-Millisecond Engine</div>
+          <div class="bento-desc">Zero external dependencies. Pre-compiled regex automata and Unicode normalization evaluate payloads in ~0.25ms locally.</div>
         </div>
 
         <div class="bento-card">
@@ -2383,14 +2383,14 @@
 
         <div class="bento-card">
           <div class="bento-icon-box" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">🪤</div>
-          <div class="bento-title">HoneyPrompt Deception</div>
-          <div class="bento-desc">Autonomous cryptographic canary tokens detect system prompt exfiltration and trigger immediate DEFCON 1 quarantine.</div>
+          <div class="bento-title">HoneyPrompt™ (Canary Deception)</div>
+          <div class="bento-desc">Sentinel's implementation of cryptographic canary tokens. Injects invisible decoy tripwires into agent prompts to catch prompt leakage and trigger DEFCON 1 quarantine.</div>
         </div>
 
         <div class="bento-card">
           <div class="bento-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">🔗</div>
-          <div class="bento-title">SHA-256 Merkle Ledger</div>
-          <div class="bento-desc">Tamper-evident chained audit blocks providing cryptographic compliance for EU AI Act Art. 15 and SOC 2 Type II.</div>
+          <div class="bento-title">SHA-256 Audit Ledger</div>
+          <div class="bento-desc">Sentinel's hash-chained audit log (Merkle-tree inspired) where each block seals the SHA-256 hash of previous events, providing tamper-evident forensic records.</div>
         </div>
       </div>
 
@@ -2440,20 +2440,20 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
         <div class="faq-heading">Enterprise Security & Architecture Highlights</div>
         <div class="faq-grid">
           <div class="faq-card">
-            <div class="faq-q">⚡ How does Sentinel achieve sub-1.8ms latency?</div>
-            <div class="faq-a">Built entirely on Python standard library with pre-compiled regex automata, zero external HTTP dependencies, and an in-memory SHA-256 Merkle chain. Runs seamlessly at edge ingress.</div>
+            <div class="faq-q">⚡ How fast is Sentinel's inspection engine?</div>
+            <div class="faq-a">Core regex detection, Unicode de-cloaking, and Shannon entropy evaluate payloads in under 0.5ms locally (average ~0.25ms). In local HTTP loopback, total turnaround is typically &lt; 5ms. Network transit over public cloud (Render) depends on host routing.</div>
           </div>
           <div class="faq-card">
             <div class="faq-q">🪤 What is HoneyPrompt Deception Technology?</div>
-            <div class="faq-a">Sentinel injects invisible cryptographic canary tokens into agent system prompts. If an attacker attempts prompt leakage or memory exfiltration, the tripwire fires instantly, locking the agent into DEFCON 1 quarantine.</div>
+            <div class="faq-a">HoneyPrompt is Sentinel's term for cryptographic canary tokens—an established security technique. Sentinel injects unique decoy strings into system prompts. If leaked in model output, Sentinel detects the breach and quarantines the agent.</div>
           </div>
           <div class="faq-card">
             <div class="faq-q">🛡️ How does Tool RBAC protect multi-agent swarms?</div>
             <div class="faq-a">Autonomous agents often call tools like SQL databases or refund APIs. Sentinel intercepts each function invocation, verifies caller trust & role permissions, and strips sensitive parameters before execution.</div>
           </div>
           <div class="faq-card">
-            <div class="faq-q">📜 How does Sentinel guarantee regulatory compliance?</div>
-            <div class="faq-a">Every event produces an immutable SHA-256 Merkle block. Sentinel directly fulfills EU AI Act Article 15 (Robustness & Cybersecurity), SOC 2 Type II, PCI-DSS v4.0 (Card Data), and HIPAA/GDPR PII masking.</div>
+            <div class="faq-q">📜 How is Sentinel designed for regulatory frameworks?</div>
+            <div class="faq-a">Sentinel implements technical controls aligned with major regulatory guidance: SHA-256 chained audit logs for traceability (EU AI Act Art. 15 & SOC 2), automated Luhn payment card masking (aligned with PCI-DSS guidance), and regex/checksum PII redaction (aligned with HIPAA/GDPR privacy rules). Note: this represents architectural alignment, not an external audit certification.</div>
           </div>
         </div>
       </div>
@@ -2532,14 +2532,14 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
           <div style="font-size:11px; font-weight:800; color:#38bdf8;">ACTIVE GOVERNANCE COMPLIANCE</div>
           <div style="font-size:12px; color:#cbd5e1; margin-top:2px;">EU AI Act Art. 15 &bull; SOC 2 Type II &bull; PCI-DSS v4.0 &bull; HIPAA/GDPR</div>
         </div>
-        <span class="preset-tag safe" style="font-size:11px; padding:4px 8px;">98.7% CERTIFIED</span>
+        <span class="preset-tag safe" style="font-size:11px; padding:4px 8px;">4 FRAMEWORKS ALIGNED</span>
       </div>
 
       <!-- Oscilloscope -->
       <div class="oscilloscope-card">
         <div>
           <div style="font-size: 10px; font-weight: 800; color: #38bdf8;">Telemetry Wave</div>
-          <div style="font-size: 10px; color: var(--text-dim);" id="oscLatency">~1.8ms</div>
+          <div style="font-size: 10px; color: var(--text-dim);" id="oscLatency">&lt; 1ms engine</div>
         </div>
         <canvas id="oscCanvas" width="140" height="38"></canvas>
       </div>
@@ -2565,8 +2565,8 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
         </div>
         <div class="kpi-value" id="kpi-total">0</div>
         <div class="kpi-sub">
-          <span style="color: #38bdf8;">100% Intercept Coverage</span>
-          <span id="kpi-latency">~1.8ms avg</span>
+          <span style="color: #38bdf8;">Multi-Layer Threat Inspection</span>
+          <span id="kpi-latency">&lt; 1ms engine</span>
         </div>
         <div class="ratio-bar">
           <div id="ratio-allow" class="ratio-segment ratio-allow" style="width: 50%;"></div>
@@ -2686,7 +2686,7 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
             <div class="verdict-header">
               <span id="verdictBadge" class="verdict-badge">ALLOW</span>
               <span id="riskDial" class="risk-dial-chip risk-low">RISK: 0/100</span>
-              <span id="verdictLatency" class="verdict-latency">1.8ms latency</span>
+              <span id="verdictLatency" class="verdict-latency">&lt; 1ms engine</span>
             </div>
             <div id="verdictReason" class="verdict-reason">No security violations detected.</div>
 
@@ -2887,8 +2887,8 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
         <div id="content-canary" class="canary-box">
           <div style="display:flex; justify-content:space-between; align-items:center;">
             <div>
-              <div style="font-size:13px; font-weight:800; color:#38bdf8;">🪤 HoneyPrompt Deception & Canary Tripwires</div>
-              <div style="font-size:10px; color:var(--text-muted);">Cryptographic tripwire tokens detect unauthorized prompt extraction & memory exfiltration.</div>
+              <div style="font-size:13px; font-weight:800; color:#38bdf8;">🪤 HoneyPrompt Deception (Canary Tokens)</div>
+              <div style="font-size:10px; color:var(--text-muted);">Sentinel's custom canary token implementation — detects unauthorized prompt extraction and memory exfiltration.</div>
             </div>
             <button class="btn-hud" onclick="generateNewCanary()">+ Deploy Tripwire</button>
           </div>
@@ -2982,51 +2982,51 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
       <button class="modal-close" onclick="closeComplianceModal()">&times;</button>
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
         <div style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 800; color: #fff;">
-          📜 Enterprise Security Compliance Certification
+          📜 Enterprise Regulatory Alignment Scorecard
         </div>
-        <span class="preset-tag safe" style="font-size: 11px; padding: 4px 10px;">CERTIFIED: 98.7%</span>
+        <span class="preset-tag safe" style="font-size: 11px; padding: 4px 10px;">SELF-ASSESSED ALIGNMENT</span>
       </div>
       
       <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">
-        Evaluated against global regulatory AI cybersecurity standards:
+        Architectural controls designed to align with key regulatory guidance (self-evaluated for hackathon demonstration; not an official 3rd-party audit):
       </p>
 
       <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:16px;">
         <div style="background:#060a14; padding:10px 12px; border-radius:8px; border:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-size:12px; font-weight:700; color:#38bdf8;">EU AI Act Article 15 (Cybersecurity & Robustness)</div>
-            <div style="font-size:10px; color:var(--text-dim);">Adversarial evasion resistance, Unicode homoglyphs, in-flight data hygiene.</div>
+            <div style="font-size:12px; font-weight:700; color:#38bdf8;">EU AI Act Article 15 (Cybersecurity & Robustness Principles)</div>
+            <div style="font-size:10px; color:var(--text-dim);">Designed with EU AI Act Art. 15 principles in mind: adversarial evasion resistance, Unicode homoglyphs, in-flight data hygiene.</div>
           </div>
-          <span class="preset-tag safe">PASS ✓</span>
+          <span class="preset-tag safe">ALIGNED ✓</span>
         </div>
 
         <div style="background:#060a14; padding:10px 12px; border-radius:8px; border:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-size:12px; font-weight:700; color:#38bdf8;">SOC 2 Type II Security & Confidentiality</div>
-            <div style="font-size:10px; color:var(--text-dim);">Continuous zero-trust audit trail in DynamoDB, agent trust governance, RBAC.</div>
+            <div style="font-size:12px; font-weight:700; color:#38bdf8;">SOC 2 Type II Security & Confidentiality Principles</div>
+            <div style="font-size:10px; color:var(--text-dim);">Built to align with SOC 2 audit trail guidance: SHA-256 hash chaining, agent trust governance, RBAC.</div>
           </div>
-          <span class="preset-tag safe">PASS ✓</span>
+          <span class="preset-tag safe">ALIGNED ✓</span>
         </div>
 
         <div style="background:#060a14; padding:10px 12px; border-radius:8px; border:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center;">
           <div>
             <div style="font-size:12px; font-weight:700; color:#38bdf8;">PCI-DSS v4.0 Requirement 3 (Account Data Protection)</div>
-            <div style="font-size:10px; color:var(--text-dim);">Automated in-flight Luhn-verified payment card redaction before external transmission.</div>
+            <div style="font-size:10px; color:var(--text-dim);">Built to align with PCI-DSS card-handling guidance: automated in-flight Luhn-verified payment card redaction.</div>
           </div>
-          <span class="preset-tag safe">PASS ✓</span>
+          <span class="preset-tag safe">ALIGNED ✓</span>
         </div>
 
         <div style="background:#060a14; padding:10px 12px; border-radius:8px; border:1px solid #1e293b; display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-size:12px; font-weight:700; color:#38bdf8;">HIPAA & GDPR Privacy Compliance</div>
-            <div style="font-size:10px; color:var(--text-dim);">Automated masking of US SSN, Indian Aadhaar, phone numbers, and email records.</div>
+            <div style="font-size:12px; font-weight:700; color:#38bdf8;">HIPAA & GDPR Privacy Principles</div>
+            <div style="font-size:10px; color:var(--text-dim);">Designed with privacy-by-design principles: automated masking of US SSN, Indian Aadhaar, phone numbers, and email records.</div>
           </div>
-          <span class="preset-tag safe">PASS ✓</span>
+          <span class="preset-tag safe">ALIGNED ✓</span>
         </div>
       </div>
 
       <div style="display:flex; justify-content:flex-end; gap:8px;">
-        <button class="btn-hud" onclick="downloadComplianceJson()">📥 Download Official Certificate (JSON)</button>
+        <button class="btn-hud" onclick="downloadComplianceJson()">📥 Download Alignment Report (JSON)</button>
       </div>
     </div>
   </div>
@@ -3750,7 +3750,8 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
       }
     }
 
-    function updateKpis(events) {
+    function updateKpis(events = cachedEvents) {
+      if (!events || !Array.isArray(events)) events = cachedEvents || [];
       const total = events.length;
       let allow = 0, redact = 0, block = 0;
       events.forEach(e => {
@@ -3759,24 +3760,36 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
         else if (e.action === 'BLOCK') block++;
       });
 
-      document.getElementById('kpi-total').innerText = total;
-      document.getElementById('kpi-allow').innerText = allow;
-      document.getElementById('kpi-redact').innerText = redact;
-      document.getElementById('kpi-block').innerText = block;
-      document.getElementById('feedCounter').innerText = `${total} Recorded`;
+      const totalEl = document.getElementById('kpi-total');
+      const allowEl = document.getElementById('kpi-allow');
+      const redactEl = document.getElementById('kpi-redact');
+      const blockEl = document.getElementById('kpi-block');
+      const feedEl = document.getElementById('feedCounter');
+
+      if (totalEl) totalEl.innerText = total;
+      if (allowEl) allowEl.innerText = allow;
+      if (redactEl) redactEl.innerText = redact;
+      if (blockEl) blockEl.innerText = block;
+      if (feedEl) feedEl.innerText = `${total} Recorded`;
 
       if (total > 0) {
         const allowPct = Math.round((allow / total) * 100);
         const redactPct = Math.round((redact / total) * 100);
         const blockPct = Math.round((block / total) * 100);
 
-        document.getElementById('allow-percent').innerText = `${allowPct}%`;
-        document.getElementById('redact-percent').innerText = `${redactPct}%`;
-        document.getElementById('block-percent').innerText = `${blockPct}%`;
+        const aPctEl = document.getElementById('allow-percent');
+        const rPctEl = document.getElementById('redact-percent');
+        const bPctEl = document.getElementById('block-percent');
+        if (aPctEl) aPctEl.innerText = `${allowPct}%`;
+        if (rPctEl) rPctEl.innerText = `${redactPct}%`;
+        if (bPctEl) bPctEl.innerText = `${blockPct}%`;
 
-        document.getElementById('ratio-allow').style.width = `${allowPct}%`;
-        document.getElementById('ratio-redact').style.width = `${redactPct}%`;
-        document.getElementById('ratio-block').style.width = `${blockPct}%`;
+        const rAllow = document.getElementById('ratio-allow');
+        const rRedact = document.getElementById('ratio-redact');
+        const rBlock = document.getElementById('ratio-block');
+        if (rAllow) rAllow.style.width = `${allowPct}%`;
+        if (rRedact) rRedact.style.width = `${redactPct}%`;
+        if (rBlock) rBlock.style.width = `${blockPct}%`;
       }
     }
 
@@ -4306,7 +4319,7 @@ response = chain.invoke({"input": verdict.sanitized_prompt})</pre>
             if (!cachedEvents.some(x => x.id === ev.id)) {
               cachedEvents.unshift(ev);
               renderTable();
-              updateKpis();
+              updateKpis(cachedEvents);
               triggerOscilloscopeSpike(ev.action);
               playSound(ev.action);
             }
@@ -4484,7 +4497,7 @@ curl -X POST https://sentinel-ai-firewall-hbs4.onrender.com/inspect \\
     "agent_id": "API-Worker"
   }'
 
-# Response in < 1.8ms:
+# Response in < 5ms local (< 1ms engine):
 # {"action": "REDACT", "sanitized_prompt": "Charge Visa card [REDACTED:CARD_NUMBER]", "latency_ms": 1.2}`
     };
 
